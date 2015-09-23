@@ -1,5 +1,7 @@
 # LocationKit iOS
-## The most advanced location manager for iOS and Android
+## The most advanced location manager
+
+[Homepage](https://locationkit.io) | [Community](https://community.locationkit.io) | [Documentation](https://docs.locationkit.io) | [Blog](https://locationkit.io/blog) | [FAQs](https://locationkit.io/developer/faqs-for-android-ios-developers-location-accuracy/) | [Pricing](https://locationkit.io/pricing/) | [Developer Dashboard](https://dashboard.locationkit.io)
 
 [![LocationKit-iOS](https://img.shields.io/badge/LocationKit--iOS-2.3.0-orange.svg)](https://docs.locationkit.io) [![CocoaPods](https://img.shields.io/cocoapods/v/LocationKit.svg?style=flat-square)](https://cocoapods.org/pods/LocationKit) [![CocoaPods](https://img.shields.io/cocoapods/p/LocationKit.svg?style=flat-square)](https://cocoapods.org/pods/LocationKit) [![GitHub tag](https://img.shields.io/github/tag/locationkit/locationkit-ios.svg?style=flat-square)](https://github.com/locationkit/locationkit-ios) [![GitHub stars](https://img.shields.io/github/stars/locationkit/locationkit-ios.svg?style=social&label=LocationKit-iOS)](https://github.com/locationkit/locationkit-ios)
 
@@ -96,3 +98,6 @@ project since it's written in Objective-C.
 2. In that file, add one line: `#import <LocationKit/LocationKit.h>`
 3. Under "Build Settings > Swift Compiler - Code Generation > Objective-C Bridging
    Header" add a value of "<YourProjectName>/<YourProjectName>-Bridging-Header.h"
+
+
+Proudly engineered in Washington, D.C.
