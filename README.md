@@ -32,6 +32,11 @@ To get started, sign up for a
 [free developer account](https://dashboard.locationkit.io) and get your API token
 immediately!
 
+### Getting Help
+
+[Click here](https://docs.locationkit.io/#getting-help) for a whole list of
+resources on getting help with LocationKit.
+
 ### CocoaPods
 
 Install the latest [LocationKit CocoaPod](https://cocoapods.org/pods/LocationKit)
