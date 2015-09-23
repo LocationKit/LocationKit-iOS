@@ -1,15 +1,36 @@
 # LocationKit iOS
-## LocationKit - The most advanced location manager for iOS and Android
+## The most advanced location manager for iOS and Android
 
 [![LocationKit-iOS](https://img.shields.io/badge/LocationKit--iOS-2.3.0-orange.svg)](https://docs.locationkit.io) [![CocoaPods](https://img.shields.io/cocoapods/v/LocationKit.svg?style=flat-square)](https://cocoapods.org/pods/LocationKit) [![CocoaPods](https://img.shields.io/cocoapods/p/LocationKit.svg?style=flat-square)](https://cocoapods.org/pods/LocationKit) [![GitHub tag](https://img.shields.io/github/tag/locationkit/locationkit-ios.svg?style=flat-square)](https://github.com/locationkit/locationkit-ios) [![GitHub stars](https://img.shields.io/github/stars/locationkit/locationkit-ios.svg?style=social&label=LocationKit-iOS)](https://github.com/locationkit/locationkit-ios)
 
 This is the public repo for LocationKit for iOS.
 
-For full documentation, visit our [docs page](https://docs.locationkit.io)
+LocationKit is the most advanced location manager available today, created by
+SocialRadar after years of extensive research into location services on mobile
+devices. It is free (as in beer) and rich in functionality.
 
-### Installation
+We do offer [paid tiers](https://locationkit.io/pricing) for more detailed
+analytics, custom reporting, and other advanced features, but all features of
+our base SDK and lowest tier of analytics will be free always.
 
-#### CocoaPods
+LocationKit features:
+
+* Always-on background location
+* Higher accuracy location than either Apple or Google's raw location services
+* Lower battery drain than running the GPS all the time on high while getting
+  nearly the same accuracy
+* Contextual location data
+* Automatic venue recognition
+* Best of breed location analytics dashboard
+
+For more details on the above, see [our Blog](https://locationkit.io/blog), [our
+website](https://locationkit.io), or our [full documentation](https://docs.locationkit.io)
+
+To get started, sign up for a
+[free developer account](https://dashboard.locationkit.io) and get your API token
+immediately!
+
+### CocoaPods
 
 Install the latest [LocationKit CocoaPod](https://cocoapods.org/pods/LocationKit)
 by adding the following to your Podfile:
@@ -18,7 +39,7 @@ by adding the following to your Podfile:
 pod 'LocationKit', '~> 2.3.0'
 ```
 
-##### Full step-by-step instructions:
+#### Full step-by-step instructions:
 
 If you already have an existing project set up with CocoaPods, skip to step 3 below:
 
@@ -45,11 +66,11 @@ target 'YourApp' do
 end
 ```
 
-#### Carthage
+### Carthage
 
 Instructions coming soon!
 
-#### Manual Installation
+### Manual Installation
 
 We generally recommend CocoaPods or Carthage for installing LocationKit as they
 are both far easier to update to the latest version, but we understand it can be
