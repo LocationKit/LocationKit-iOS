@@ -70,7 +70,14 @@ end
 
 ### Carthage
 
-Instructions coming soon!
+If you're just getting started with Carthage, check out their
+[getting started guide](https://github.com/Carthage/Carthage#if-youre-building-for-ios).
+
+Add the following to your `Cartfile`:
+
+```
+github "LocationKit/locationkit-ios" ~> 2.3
+```
 
 ### Manual Installation
 
@@ -99,5 +106,8 @@ project since it's written in Objective-C.
 3. Under "Build Settings > Swift Compiler - Code Generation > Objective-C Bridging
    Header" add a value of "<YourProjectName>/<YourProjectName>-Bridging-Header.h"
 
+### Cordova
 
-Proudly engineered in Washington, D.C.
+See [github.com/socialradar/Cordova-LocationKit] for more details.
+
+### Proudly engineered in Washington, D.C.
