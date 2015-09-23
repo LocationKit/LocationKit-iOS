@@ -1,7 +1,7 @@
 # LocationKit iOS
 ## LocationKit - The most advanced location manager for iOS and Android
 
-[![LocationKit-iOS](https://img.shields.io/badge/LocationKit--iOS-2.3.0-orange.svg)]()[![CocoaPods](https://img.shields.io/cocoapods/v/LocationKit.svg?style=flat-square)]() [![CocoaPods](https://img.shields.io/cocoapods/p/LocationKit.svg?style=flat-square)]() [![GitHub tag](https://img.shields.io/github/tag/locationkit/locationkit-ios.svg?style=flat-square)]() [![GitHub stars](https://img.shields.io/github/stars/locationkit/locationkit-ios.svg?style=social&label=LocationKit-iOS)]()
+[![LocationKit-iOS](https://img.shields.io/badge/LocationKit--iOS-2.3.0-orange.svg)](https://docs.locationkit.io) [![CocoaPods](https://img.shields.io/cocoapods/v/LocationKit.svg?style=flat-square)](https://cocoapods.org/pods/LocationKit) [![CocoaPods](https://img.shields.io/cocoapods/p/LocationKit.svg?style=flat-square)](https://cocoapods.org/pods/LocationKit) [![GitHub tag](https://img.shields.io/github/tag/locationkit/locationkit-ios.svg?style=flat-square)](https://github.com/locationkit/locationkit-ios) [![GitHub stars](https://img.shields.io/github/stars/locationkit/locationkit-ios.svg?style=social&label=LocationKit-iOS)](https://github.com/locationkit/locationkit-ios)
 
 This is the public repo for LocationKit for iOS.
 
