@@ -108,6 +108,6 @@ project since it's written in Objective-C.
 
 ### Cordova
 
-See [github.com/socialradar/Cordova-LocationKit] for more details.
+See [github.com/socialradar/Cordova-LocationKit](https://github.com/socialradar/Cordova-LocationKit) for more details.
 
 ### Proudly engineered in Washington, D.C.
