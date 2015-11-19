@@ -4,13 +4,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LKVisitFilter.h"
 #import "LKPlacemark.h"
-#import "LKVisitCriteria.h"
 
 @interface LKVisit : CLVisit <NSCoding>
 
 
+@property (nonatomic, strong) LKVisitFilter *criteria;
 @property (nonatomic, strong) LKPlacemark *place;
-@property (nonatomic, strong) LKVisitCriteria *criteria;
 
 @end

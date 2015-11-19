@@ -26,7 +26,7 @@
  * Discussion:
  *   Initialize a newly allocated placemark from another placemark, copying its data.
  */
-- (id)initWithPlacemark:(CLPlacemark *)placemark;
+- (id _Nonnull)initWithPlacemark:(CLPlacemark * _Nonnull)placemark;
 
 /*
  *  location

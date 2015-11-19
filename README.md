@@ -3,7 +3,7 @@
 
 [Homepage](https://locationkit.io) | [Community](https://community.locationkit.io) | [Documentation](https://docs.locationkit.io) | [Blog](https://locationkit.io/blog) | [FAQs](https://locationkit.io/developer/faqs-for-android-ios-developers-location-accuracy/) | [Pricing](https://locationkit.io/pricing/) | [Developer Dashboard](https://dashboard.locationkit.io)
 
-[![LocationKit-iOS](https://img.shields.io/badge/LocationKit--iOS-2.3.0-orange.svg)](https://docs.locationkit.io) [![CocoaPods](https://img.shields.io/cocoapods/v/LocationKit.svg?style=flat-square)](https://cocoapods.org/pods/LocationKit) [![CocoaPods](https://img.shields.io/cocoapods/p/LocationKit.svg?style=flat-square)](https://cocoapods.org/pods/LocationKit) [![GitHub tag](https://img.shields.io/github/tag/locationkit/locationkit-ios.svg?style=flat-square)](https://github.com/locationkit/locationkit-ios) [![GitHub stars](https://img.shields.io/github/stars/locationkit/locationkit-ios.svg?style=social&label=LocationKit-iOS)](https://github.com/locationkit/locationkit-ios)
+[![LocationKit-iOS](https://img.shields.io/badge/LocationKit--iOS-3.0.0-beta-orange.svg)](https://docs.locationkit.io) [![CocoaPods](https://img.shields.io/cocoapods/v/LocationKit.svg?style=flat-square)](https://cocoapods.org/pods/LocationKit) [![CocoaPods](https://img.shields.io/cocoapods/p/LocationKit.svg?style=flat-square)](https://cocoapods.org/pods/LocationKit) [![GitHub tag](https://img.shields.io/github/tag/locationkit/locationkit-ios.svg?style=flat-square)](https://github.com/locationkit/locationkit-ios) [![GitHub stars](https://img.shields.io/github/stars/locationkit/locationkit-ios.svg?style=social&label=LocationKit-iOS)](https://github.com/locationkit/locationkit-ios)
 
 This is the public repo for LocationKit for iOS.
 
@@ -43,7 +43,7 @@ Install the latest [LocationKit CocoaPod](https://cocoapods.org/pods/LocationKit
 by adding the following to your Podfile:
 
 ```ruby
-pod 'LocationKit', '~> 2.3.0'
+pod 'LocationKit', '~> 3.0.0-beta'
 ```
 
 #### Full step-by-step instructions:
@@ -53,7 +53,7 @@ If you already have an existing project set up with CocoaPods, skip to step 3 be
 1. If you don't yet have CocoaPods installed, run `gem install cocoapods`
 1. Then, from your project root, run `pod init` to get started with CocoaPods.
    That'll create a `Podfile` in your project directory
-1. Edit it and add `pod 'LocationKit', '~>2.3.0'` to that Podfile, making sure
+1. Edit it and add `pod 'LocationKit', '~>3.0.0-beta'` to that Podfile, making sure
    LocationKit is included for your intended target.
 1. If you have specified a platfrom (e.g. `platform :ios, '8.0'`), make sure
    you specify iOS 8.0 or greater. LocationKit is provided as a Dynamic
@@ -81,7 +81,7 @@ If you're just getting started with Carthage, check out their
 Add the following to your `Cartfile`:
 
 ```
-github "LocationKit/locationkit-ios" ~> 2.3
+github "LocationKit/locationkit-ios" ~> 3.0
 ```
 
 ### Manual Installation

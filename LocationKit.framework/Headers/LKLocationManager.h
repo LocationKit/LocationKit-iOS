@@ -6,14 +6,16 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 #import <UIKit/UIKit.h>
-
+#import "LKVisit.h"
+#import "LKRegion.h"
+#import "LKSearchRequest.h"
+#import "LKSetting.h"
+#import "LKVisitFilter.h"
 #import "LKPerson.h"
 #import "LKPlacemark.h"
 #import "LKSearchRequest.h"
 #import "LKSetting.h"
 #import "LKVisit.h"
-#import "LKVisitCriteria.h"
-
 
 typedef NS_OPTIONS(NSUInteger, LKActivityMode) {
     LKActivityModeUnknown,
@@ -74,7 +76,7 @@ typedef NS_OPTIONS(NSUInteger, LKActivityMode) {
  *     the app they will get a new deviceId (as the data store we write it to will be wiped on an
  *     app uninstall/install)
  */
-@property(nonatomic, readonly)  NSString* _Nullable deviceId;
+@property(nonatomic, readonly) NSString* _Nullable deviceId;
 
 /*
  * version
@@ -105,14 +107,6 @@ typedef NS_OPTIONS(NSUInteger, LKActivityMode) {
  *     second, we suggest keeping the interval at 1 minute or more.
  */
 @property(nonatomic) NSTimeInterval locationUpdateInterval;
-
-/*
- * detectVenues
- *
- * Discussion:
- *     Whether or not to detect visits. Disabled by default.
- */
-@property(nonatomic) BOOL detectVenues;
 
 /*
  * whenInUseOnly
@@ -166,9 +160,14 @@ typedef NS_OPTIONS(NSUInteger, LKActivityMode) {
  */
 - (void)requestLocation:(void (^ _Nonnull)(CLLocation* _Nullable location, NSError* _Nullable error))handler;
 
-
-- (void)startMonitoringForRegionWithCriteria:(LKVisitCriteria* _Nonnull)criteria;
-- (void)stopMonitoringForRegionWithCriteria:(LKVisitCriteria* _Nonnull)criteria;
+/*
+ * startMonitoringForRegionWithCriteria
+ *
+ * Discussion:
+ *     Call this method with a visitFilter
+ */
+- (void)startMonitoringForRegionWithCriteria:(LKVisitFilter* _Nonnull)criteria;
+- (void)stopMonitoringForRegionWithCriteria:(LKVisitFilter* _Nonnull)criteria;
 @property(nonatomic, readonly) NSArray* _Nonnull monitoredCriteria;
 
 /*
@@ -243,6 +242,33 @@ typedef NS_OPTIONS(NSUInteger, LKActivityMode) {
  *     can take a reasonable guess at a work address so it may be nil for some time
  */
 - (void)requestWorkAddress:(void (^ _Nonnull)(LKPlacemark* _Nullable, NSError* _Nullable))handler;
+
+/*
+ * startMonitoringVisits
+ *
+ * Discussion:
+ *     By default, visit detection is disabled for optimal battery life. To enable it, call this
+ *     method and not only will LocationKit go into a mode optimized for best battery life with
+ *     maximum visit detection accuracy, but your LKLocationManagerDelegate methods `didStartVisit`
+ *     and `didEndVisit` will get called whenever a visit is started or ended.
+ */
+- (void)startMonitoringVisits;
+
+/*
+ * stopMonitoringVisits
+ *
+ * Discussion:
+ *     By default, visit detection is disabled for optimal battery life. To disable it once it has
+ *     been enabled, call this method and LocationKit will stop monitoring for visits and go back
+ *     to the settings it had prior to starting visit monitoring.
+ */
+- (void)stopMonitoringVisits;
+- (void)startMonitoringVisitsWithFilter:(LKVisitFilter* _Nonnull)filter;
+- (void)stopMonitoringVisitsWithFilter:(LKVisitFilter* _Nonnull)filter;
+
+- (void)startMonitoringForRegion:(CLRegion* _Nonnull)region;
+- (void)stopMonitoringForRegion:(CLRegion* _Nonnull)region;
+
 
 /*
  *  updateUserValues:
